@@ -86,8 +86,8 @@ int merge(int arr[], int temp[], int left,
 /* Driver code */
 int main(int argv, char** args)
 {
-    int arr[] = { 1, 20, 6, 4, 5 };
-    cout << " Number of inversions are " << mergeSort(arr, 5) << endl;
+    int arr[] = { 1, 2, 4, 3, 5 };
+    std::cout << " Number of inversions are " << mergeSort(arr, 5) << endl;
     return 0;
 }
 
