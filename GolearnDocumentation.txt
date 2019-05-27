@@ -1,0 +1,35 @@
+GoLearn uses the Go language basic library, except for a few that rely on the C language. When using, you need to install Go 1.4 or above.
+
+installation
+System dependent
+You need to install a suitable compiler first (try g++ on the terminal)
+Gonum BLAS used by GoLearn requires a library of OpenBLAS or other similar functions to be installed beforehand. Please follow the instructions for your system to install the tutorial, which may require the installation of a C library.
+Install the library that GoLearn internally depends on
+After installing go and the system depends on the relevant requirements, enter
+
+Go get -t -u -v github.com/sjwhitworth/golearn
+finish installation
+Enter the following instructions to complete the installation
+
+Cd $GOPATH/src/github.com/sjwhitworth/golearn
+Go get -t -u -v ./...
+common problem
+On Linux or Mac OS X, you can use the terminal to confirm that Go is installed correctly. Try to compile the sample program to see if all the installations are successful.
+
+Your go folder must exist in your home directory and can be written to. If not, please enter cd && mkdir go to create
+
+Your GOPATH and PATH variables must be set correctly.
+
+Enter echo $GOROOT and echo $GOPATH to confirm.
+The $GOPATH variable must contain $GOROOT and a bin/ folder. For example, if your $GOROOT is set to /home/sen/go , your $GOPATH needs to be set to /home/sen/go/bin .
+Add export GOROOT=$HOME/go and export PATH=$PATH:$GOROOT/bin to the Bash profile to make sure all variables are set correctly.
+Support situation
+Operating System Mac OS X 10.8
+Ubuntu 14.04
+OpenSUSE 13.1
+Go version 1.2
+GoLearn version Current version
+Support current status
+Next version Reference upgrade version
+Mac OS X 10.8
+Installing BLAS through HomeBrew has not been confirmed to be feasible.

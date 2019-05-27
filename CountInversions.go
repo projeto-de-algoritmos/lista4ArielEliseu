@@ -2,17 +2,32 @@ package main
 
 import "fmt"
 
-/* This function sorts the input array and returns the
-number of inversions in the array */
-
+/**
+ * @brief      { This function sorts the input array and returns the
+ * number of inversions in the array }
+ *
+ * @param      arr         The array to be sorted
+ * @param      array_size  The array size
+ *
+ * @return     { the number of inversions }
+ */
 func mergeSort(arr [100]int, array_size int) int {
 	//temp := make([]int, 100) //array_size)
 	var temp [100]int
 	return _mergeSort(arr, temp, 0, array_size-1)
 }
 
-/* An auxiliary recursive function that sorts the input array and
-returns the number of inversions in the array. */
+/**
+ * @brief      { An auxiliary recursive function that sorts the input array and
+ * returns the number of inversions in the array.}
+ *
+ * @param      arr    The array of data
+ * @param      temp   The temporary array
+ * @param      left   Initial index
+ * @param      right  Initial index
+ *
+ * @return     {  the number of inversions }
+ */
 func _mergeSort(arr [100]int, temp [100]int, left int, right int) int {
 	var mid int
 	var inv_count = 0
@@ -34,8 +49,18 @@ func _mergeSort(arr [100]int, temp [100]int, left int, right int) int {
 	return inv_count
 }
 
-/* This funt merges two sorted arrays
-and returns inversion count in the arrays.*/
+/**
+ * @brief      {  This funt merges two sorted arrays
+ * and returns inversion count in the arrays. }
+ *
+ * @param      arr    The array to be merged
+ * @param      temp   The temporary array to be merged
+ * @param      left   The left index
+ * @param      mid    The middle index
+ * @param      right  The right index
+ *
+ * @return     { the number of inversions }
+ */
 func merge(arr [100]int, temp [100]int, left int, mid int, right int) int {
 	var i int
 	var j int

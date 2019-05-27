@@ -1,0 +1,24 @@
+- [ ] Engenharia de Software
+    - [ ] A-Desempenho.
+    - [ ] B-Satisfação.
+    - [ ] C-Teórico/Prático.
+
+- [ ] Engenharia de Eletrônica
+    - [ ] A-Desempenho.
+    - [ ] B-Satisfação.
+    - [ ] C-Teórico/Prático.
+
+- [ ] Engenharia de Energia
+    - [ ] A-Desempenho.
+    - [ ] B-Satisfação.
+    - [ ] C-Teórico/Prático.
+
+- [ ] Engenharia de Automotiva
+    - [ ] A-Desempenho.
+    - [ ] B-Satisfação.
+    - [ ] C-Teórico/Prático.
+
+- [ ] Engenharia de Aeroespacial
+    - [ ] A-Desempenho.
+    - [ ] B-Satisfação.
+    - [ ] C-Teórico/Prático.
