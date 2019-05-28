@@ -25,8 +25,8 @@ func main() {
 	//fmt.Println(DataHead{true, 1, 2, 3, 4})
 	//fmt.Println(DataBody{A, B, C, D, E, F})
 
-	h := DataHead{true, 1, 2, 3, 4}
-	b := DataBody{A, B, C, D, E, F}
+	h := DataHead{true, 1, 2, 3, 3, 4}
+	b := DataBody{A, B, B, C, D, E, F}
 
 	fmt.Println(KnowledgeCloud{true, h, b})
 }
