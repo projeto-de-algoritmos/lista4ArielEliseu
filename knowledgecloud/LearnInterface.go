@@ -1,8 +1,6 @@
-//package knowledgecloud
+package knowledgecloud
 
-package main
-
-type KnowledgeCloud interface {
+type Knowledge interface {
 	buildcloud() (bool, bool)
 
 	workonRanks() bool

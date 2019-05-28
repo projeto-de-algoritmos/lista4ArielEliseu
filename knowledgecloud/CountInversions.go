@@ -1,7 +1,4 @@
-//package countinversions
-package main
-
-//import "fmt"
+package knowledgecloud
 
 /**
  * @brief      { This function sorts the input array and returns the

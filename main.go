@@ -1,16 +1,9 @@
-//package knowledgecloud
-
 package main
 
 import (
+	"./knowledgecloud"
 	"fmt"
 )
-
-type KnowledgeCloud struct {
-	Real bool
-	Head DataHead
-	Body DataBody
-}
 
 func main() {
 	A := []int{1, 2, 3, 4}
@@ -25,8 +18,8 @@ func main() {
 	//fmt.Println(DataHead{true, 1, 2, 3, 4})
 	//fmt.Println(DataBody{A, B, C, D, E, F})
 
-	h := DataHead{true, 1, 2, 3, 3, 4}
-	b := DataBody{A, B, B, C, D, E, F}
+	h := knowledgecloud.DataHead{true, 1, 2, 3, 3, 4}
+	b := knowledgecloud.DataBody{A, B, B, C, D, E, F}
 
-	fmt.Println(KnowledgeCloud{true, h, b})
+	fmt.Println(knowledgecloud.Cloud{true, h, b})
 }
