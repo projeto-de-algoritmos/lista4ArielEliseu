@@ -1,6 +1,7 @@
+//package countinversions
 package main
 
-import "fmt"
+//import "fmt"
 
 /**
  * @brief      { This function sorts the input array and returns the
@@ -11,9 +12,9 @@ import "fmt"
  *
  * @return     { the number of inversions }
  */
-func mergeSort(arr [100]int, array_size int) int {
+func mergeSort(arr [1000]int, array_size int) int {
 	//temp := make([]int, 100) //array_size)
-	var temp [100]int
+	var temp [1000]int
 	return _mergeSort(arr, temp, 0, array_size-1)
 }
 
@@ -28,7 +29,7 @@ func mergeSort(arr [100]int, array_size int) int {
  *
  * @return     {  the number of inversions }
  */
-func _mergeSort(arr [100]int, temp [100]int, left int, right int) int {
+func _mergeSort(arr [1000]int, temp [1000]int, left int, right int) int {
 	var mid int
 	var inv_count = 0
 	if right > left {
@@ -61,7 +62,7 @@ func _mergeSort(arr [100]int, temp [100]int, left int, right int) int {
  *
  * @return     { the number of inversions }
  */
-func merge(arr [100]int, temp [100]int, left int, mid int, right int) int {
+func merge(arr [1000]int, temp [1000]int, left int, mid int, right int) int {
 	var i int
 	var j int
 	var k int
@@ -109,11 +110,38 @@ func merge(arr [100]int, temp [100]int, left int, mid int, right int) int {
 }
 
 /* Driver code */
-func main() {
-	//:= [5]int{1, 2, 3, 4, 5}
-	arr := [100]int{1, 2, 4, 3, 5}
-	fmt.Println(" Number of inversions are ", mergeSort(arr, 5))
-	fmt.Println(arr)
-}
+// func main() {
+// 	//:= [5]int{1, 2, 3, 4, 5}
+// 	arr := [1000]int{1, 2, 4, 3, 5}
+
+// 	fmt.Println(" Number of inversions are ", mergeSort(arr, 5))
+
+// 	for i := 0; i < 100; i++ {
+// 		arr[i] = 100 - i
+// 	}
+
+// 	fmt.Println(" Number of inversions are ", mergeSort(arr, 100))
+
+// 	for i := 0; i < 50; i++ {
+// 		arr[i] = i
+// 	}
+// 	for i := 50; i < 100; i++ {
+// 		arr[i] = 101 - i
+// 	}
+
+// 	fmt.Println(" Number of inversions are ", mergeSort(arr, 100))
+
+// 	for i := 0; i < 50; i++ {
+// 		arr[i] = 50 - i
+// 	}
+
+// 	fmt.Println(" Number of inversions are ", mergeSort(arr, 50))
+
+// 	for i := 0; i < 999; i++ {
+// 		arr[i] = i
+// 	}
+
+// 	fmt.Println(" Number of inversions are ", mergeSort(arr, 999))
+// }
 
 // This is code is contributed by rathbhupendra and Ariel Serafim;;
