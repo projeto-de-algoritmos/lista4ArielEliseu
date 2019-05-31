@@ -6,14 +6,15 @@ Based on the behavior determined on the Head the Samples are analyzed in order t
 The analysis is explored in the interface file.
 */
 type DataBody struct {
-	Ranks []int //samples ranks
+	ranks  []int //samples ranks
+	points []int //samples points
 
-	Idealrankscenter []int //ideal "center of the ranks" for each label
-	Realrankcenter   []int //real "center of the ranks" for each label
+	idealrankscenter []int //ideal "center of the ranks" for each label
+	realrankcenter   []int //real "center of the ranks" for each label
 
-	Idealpoints []int //ideal center of mass
-	Realpoints  []int //real center of mass
+	idealmasscenter []int //ideal center of mass
+	realmasspoints  []int //real center of mass
 
-	Distrank    []int //results based on ranks
-	Distclassic []int //results based on points
+	distrank    []int //results based on ranks
+	distclassic []int //results based on points
 }

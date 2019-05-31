@@ -1,7 +1,8 @@
 package knowledgecloud
 
 type Cloud struct {
-	Real bool
-	Head DataHead
-	Body DataBody
+	real bool
+	on   bool
+	head DataHead
+	body DataBody
 }
