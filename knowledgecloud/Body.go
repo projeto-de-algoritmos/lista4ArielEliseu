@@ -6,6 +6,6 @@ Based on the behavior determined on the Head the Samples are analyzed in order t
 The analysis is explored in the interface file.
 */
 type DataBody struct {
-	points datapoint
-	ranks  datarank
+	points body.datapoint
+	ranks  body.datarank
 }

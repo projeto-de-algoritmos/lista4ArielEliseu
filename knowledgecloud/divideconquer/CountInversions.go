@@ -1,4 +1,4 @@
-package knowledgecloud
+package divideconquer
 
 /**
  * @brief      { This function sorts the input array and returns the
