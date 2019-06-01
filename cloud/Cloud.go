@@ -2,6 +2,6 @@ package knowledgecloud
 
 type Cloud struct {
 	manager head.mastercontrol
-	head    head.dataHead
-	body    body.dataBody
+	head    head.datahead
+	body    body.databody
 }

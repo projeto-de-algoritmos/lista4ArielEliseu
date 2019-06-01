@@ -1,3 +1,5 @@
+package point
+
 import (
 	"../body/data"
 	"../body/knowledge"

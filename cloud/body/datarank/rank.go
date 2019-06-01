@@ -1,3 +1,5 @@
+package rank
+
 import (
 	"../body/data"
 	"../body/knowledge"
