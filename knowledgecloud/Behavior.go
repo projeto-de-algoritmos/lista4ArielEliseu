@@ -2,8 +2,7 @@ package knowledgecloud
 
 import "fmt"
 
-func (c *Cloud) Sethead(_real bool, _single bool, _samples int, _labels int,
-	_point_rn int, _rank_rn int, _ranksize int) (bool, bool) {
+func (c *Cloud) Sethead(_real bool, _single bool, _dataset int, _samples int, _labels int, _point_rn int, _rank_rn int, _ranksize int) (bool, bool) {
 	//nc := new(Cloud)
 	if c.on {
 		fmt.Println("This method can be used only one time, use addsamples() to add more samples,")
@@ -13,6 +12,7 @@ func (c *Cloud) Sethead(_real bool, _single bool, _samples int, _labels int,
 	} else {
 
 		c.head.single = _single
+		c.head.dataset = _dataset
 		c.head.samples = _samples
 		c.head.labels = _labels
 		c.head.point_rn = _point_rn
@@ -37,4 +37,14 @@ func (c *Cloud) Setdata(datapoints bool, dataranks bool, pointdata []int, rankda
 		c.body.ranks = rk
 	}
 	return true, false
+}
+
+func (c *Cloud) BworkonRanks(analyzed []int) bool {
+	var auxDists [c.head.samples * c.head.rank_rn]int
+	var index int
+	for s := 0; s < c.head.samples; s++ {
+		for rn := 0; rn < c.head.rank_rn; rn++ {
+			//C
+		}
+	}
 }

@@ -22,9 +22,9 @@ func main() {
 	//h := knowledgecloud.DataHead{true, 1, 2, 3, 3, 4}
 	//b := knowledgecloud.DataBody{A, B, B, C, D, E, F}
 	var c knowledgecloud.Cloud
-	c.Sethead(true, true, 1, 2, 3, 3, 4)
+	c.Sethead(true, true, 10, 1, 2, 3, 3, 4)
 	c.Setdata(true, true, C, B)
 	fmt.Println(c)
-	c.Sethead(true, true, 1, 2, 3, 3, 4)
+	c.Sethead(true, true, 10, 1, 2, 3, 3, 4)
 
 }
