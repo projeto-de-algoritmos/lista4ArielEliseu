@@ -9,7 +9,9 @@ Data Head allows you to control the behavior of a Knowledge Cloud built on this 
 The control role of the Data Head variables are:
 */
 type datahead struct {
-	mastercontrol datacontrol //head
-	pointcontrol  headpoint   //head
-	rankcontrol   headrank    //head
+	single bool /*Single: Determine the nature of a Data Cloud object to be either exclusive to some given sample or incorporate a group of samples*/
+
+	pointcontrol point_h.headpoint //point_h
+
+	rankcontrol rank_h.headrank //rank_h
 }
